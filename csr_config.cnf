@@ -1,0 +1,20 @@
+[ req ]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+
+[ req_distinguished_name ]
+C = JP
+ST = Tokyo
+L = Minato-ku
+O = Example Corp
+OU = IT Department
+CN = www.example.com
+emailAddress = admin@example.com
+
+[ v3_req ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = www.example.com
+DNS.2 = example.com
