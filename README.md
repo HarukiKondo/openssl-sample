@@ -432,9 +432,18 @@ CSRには、公開鍵と申請者の情報が含まれています。
 | Common Name (CN)          | サーバーのFQDN（完全修飾ドメイン名）を入力します。| www.example.com     |
 | Email Address             | 担当者のメールアドレスを入力します。         | admin@example.com   |
 
+### PEM形式
+
+Privacy Enhanced Mail の略で、メールを暗号化して送信する際に利用されていた形式です。
+
+SSH の秘密鍵、HTTPS のサーバ証明書などにも利用されます。下記の様にバイナリ情報を BASE64 にエンコードし、前後を -----BEGIN XXXXXX----- と -----END XXXXXX----- で囲んだ形式となります。
 
 ### 参考文献
 1. [初心者向け！はじめてのOpenSSL インストールから証明書作成まで](https://envader.plus/article/390#2.%20%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
 2. [OpenSSL 公式サイト](https://openssl.org/)
 3. [GitHub - OpenSSL](https://github.com/openssl/openssl/tree/master)
 4. [インストーラー ダウンロードサイト](https://slproweb.com/products/Win32OpenSSL.html)
+5. [OpenSSL 公式ドキュメント](https://docs.openssl.org/master/)
+6. [OpenSSL コマンドリファレンス](https://docs.openssl.org/master/man1/)
+7. [とほほのOpenSSL入門](https://www.tohoho-web.com/ex/openssl.html)
+8. [Qiita - OpenSSL の使い方練習: ECDSA](https://qiita.com/propella/items/be0cd5708053321ae7a4)
